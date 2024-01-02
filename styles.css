@@ -1,0 +1,340 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(37,35,77);
+    background: linear-gradient(150deg, rgba(37,35,77,1) 0%, rgba(46,51,119,1) 30%, rgba(56,56,133,1) 51%, rgba(127,132,149,1) 95%);
+}
+
+.tab.current-tab{
+    background-color: rgba(219, 226, 239, 0.364);
+    border-radius: 4px;
+}
+.form-container.active{
+    scale: 1;
+    opacity: 1;
+    display: flex;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    line-height: 2;
+    gap: 4px;
+     
+}
+.selected-lang:before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 32px;
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+    
+}
+.menu{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.1rem;
+    color: #f8f8f8;
+    margin-bottom: 5px;
+   
+}
+
+.lang-menu{
+    position: relative;
+    width: 100px;
+    margin-left: 20px; 
+}
+
+.lang-menu ul {
+   margin: 0;
+   padding: 0;
+   width: 120px;
+   background-color: #fff;
+   border: 1px solid #f8f8f8;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+   border-radius: 3px;
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin-top: 73px;
+}
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lang-menu ul li a{
+    width:130px;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.lang-menu ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    /* background-image: url(https://flagsapi.com/DE/flat/32.png); */
+}
+
+.lang-menu ul li a:hover{
+   background-color: #f2f2f2;
+  
+}
+.us{
+    background-color: #f2f2f2;
+}
+
+.de:before{
+    background-image: url(https://flagsapi.com/DE/flat/32.png);
+}
+.fr:before{
+    background-image: url(https://flagsapi.com/FR/flat/32.png);
+}
+.us:before{
+    background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+.lang-menu:hover ul{
+    display: block;
+}
+
+.wrapper{
+     color: #f2f2f2;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.tab-container{
+    margin-left: 20vw;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    font-size: rem;
+}
+h1{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.para-container{
+    width: 530px;
+   
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.parameter{
+    width: 160px;
+    height: 120px;
+    margin-top: 10px;
+    background-color: #b6bfe08b;
+    border-radius: 5px;
+} 
+.parameter:hover{
+    scale: 1.1;
+    transition: .4s  ease-out ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.tab.current-tab{
+    width: 180px;
+    height: 30px;
+    font-size: 1.2rem;
+}
+form{
+   
+  display: none;
+  margin-left: 45vw;
+  
+}
+input{
+    font-family:'Poppins', sans-serif ;
+    width: 150px;
+    height: 32px;
+    margin-top: 10px;
+    border-radius: 15px 1px 1px 15px;
+    background-color: #f2f4fdee;
+    border-color: #f2f2f2;
+     font-size: 1.02rem;
+     outline: none;
+    padding-left: 13px;
+    color: #1a202f;
+}
+input:hover{
+    transition: 0.2s all linear;
+    /* scale: 1.02; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-1{
+    margin-top: 10.09px;
+    border-radius: 1px 15px 14px 1px;
+    background-color: #f2f4fdee;
+    height: 32px;
+    width: 35px;
+    outline: none;
+    border: none;
+    
+}
+.btn-1:hover{
+    background-color: #d8dbeaee;
+}
+
+.btn{
+    margin-right: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family:'Poppins', sans-serif ;
+    color: #f2f2f2;
+    width: 170px;
+    height: 40px;
+    background-color: rgb(50, 190, 71);
+    border-radius: 7px;
+    border: none;
+    margin: 20px 0;
+}
+.btn:hover{
+    background-color: rgb(76, 198, 94);
+    transition: 0.2s all linear;
+    /* scale: 1.02; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+    font-size: 1.7rem;
+    height: 30px;
+}
+.temp{
+    height: 50px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+    width: 170px;
+}
+#degree{
+    font-family: 'Comfortaa', sans-serif;
+    height: 40px;
+    margin-top: 7px;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.Desc{
+    padding-top: 15px;
+    font-weight: 600;
+    color: rgba(0, 213, 255, 0.722);
+    font-size: 1.32rem;
+}
+.loading-container{
+    margin-top: 15px;
+}
+.style{
+    font-size: 1.2rem;
+    font-weight: 510;
+    color: rgba(212, 212, 255, 0.898);
+    display: flex;
+    justify-content: center;
+}
+#d{
+    font-size: 1.14rem;
+    font-weight: 500;
+    color: rgba(212, 212, 255, 0.898);
+}
+.com{
+    margin-top: 8px;
+}
+.com1{
+    margin-bottom: 3px;
+}
+.loc{
+    margin-top: 10px;
+}
+
+/* MAke responsive */
+
+@media screen and (max-width:560px) {
+    .para-container{
+       
+        margin-left: 29vw;
+        display: flex;
+        flex-direction: column;  
+    }
+    .parameter{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        scale: 1.2;
+    }
+    body{
+        width: 100%;
+        height: 100%
+    }
+    .loc{
+        margin-top: 13px;
+        width: 55px;
+        height: 55px;
+    }
+    form{
+        margin-left: 27vw;
+    }
+    .parameter:hover{
+        scale: 1.3;
+        transition: .4s  ease-out ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    .grant-location-container{
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .menu{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: .9rem;
+        color: #f8f8f8;
+        margin-bottom: 3px;
+       
+    }
+    #lang{
+              font-size: .9rem;
+    } 
+    .lang-menu{
+        margin-top: 15px;
+    }
+    .lang-menu ul{
+        margin-top: 68px;
+        width: 110px;
+        font-size: .8rem;
+    }
+    .lang-menu ul li a:before{
+        width: 26px;
+        height: 23px; 
+    }
+}
+
+@media screen and (max-width:700px){
+    .tab-container{
+       flex-direction: column;
+       font-size: .9rem;
+       width: 60vw;
+       align-items: center;
+       
+    }
+    .tab.current-tab{
+        font-size: 1.1rem;
+    }
+    .tab{
+        margin-top: 7px;
+    }
+}

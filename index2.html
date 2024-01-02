@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <h1>WETTER-APP</h1>
+        <!-- grant access button -->
+       
+        <!-- language menu -->
+        <div class="lang-menu">
+            <p class="menu">Sprachmenü</p>
+             <div class="selected-lang">
+                 <span id="lang">German></span>
+             </div>
+             <ul>
+                <li>
+                    <a href="index2.html" class="de">German</a>
+                </li>
+                <li>
+                   <a href="index1.html" class="fr">French</a>
+               </li>
+               <li>
+                   <a href="index.html" class="us">English</a>
+               </li>
+    
+             </ul>
+             
+        </div>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Ihr Wetter</p>
+            <p class="tab" data-searchWeather>Suchen Sie nach Wetter</p>
+        </div>
+
+        <div class="weather-container">
+            <!-- grant location -->
+            <div class="grant-location-container">
+                <img src="placeholder.png" alt="" width="80" height="80" loading="lazy" class="loc">
+                <p>Standortzugriff gewähren</p>
+                <p>Erlauben Sie den Zugriff, um Wetterinformationen abzurufen</p>
+                <button class="btn" data-grantAccess>Zugriff gewähren</button>
+                
+            </div>
+
+            <!-- search form -->
+              <form class="form-container" data-searchForm>
+                <input placeholder="Search City..." data-searchInput>
+                <button class="btn-1" type="submit">
+                    <img src="magnifying-glass-solid.svg" alt="" width="20" height="20" loading="lazy">
+                </button>
+              </form>
+
+           <!-- loadong screen container -->
+           <div class="loading-container">
+            <img src="Ripple-1s-200px (1).gif" alt="" width="70" height="70">
+            
+           </div>
+
+           <!-- show weather info -->
+           <div class="user-info-container">
+              
+              <!-- city name and flag -->
+                <div class="name">
+                    <p  class="City" data-cityName></p>
+                    <!-- country flag -->
+                    <img data-countryIcon>
+                </div>
+
+              <!-- weather description -->
+                <p data-weatherDesc class="Desc"></p>
+              <!-- weather icon -->
+                <img data-weatherIcon >  
+              <!-- temperature -->
+               <div class="temp">
+                <p data-temp></p><p id="degree"> °C</p>
+               </div>
+                
+               
+            <!-- 3 cards parameter -->
+            <div class="para-container">
+
+                   <!-- card 1 -->
+                  <div class="parameter">
+                      <img src="—Pngtree—vector wind icon_4183797.png" alt="" width="80px" height="60px">
+                      <p>WINDGESCHWIND</p>
+                      <div class="style">
+                        <p data-windspeed class="style"></p><p id="d">m/s</p>
+                      </div>
+                     
+                   </div>
+
+                    <!-- card 2 -->
+                    <div class="parameter">
+                        <img src="humid-icon-6.jpg" alt="" width="57px" height="50px" class="com">
+                        <p>FEUCHTIGKEIT</p>
+                        <div class="style">
+                            <p data-humidity class="style"></p><p id="d">%</p>
+                        </div>
+                    </div>
+
+                     <!-- card 3 -->
+                     <div class="parameter">
+                         <img src="—Pngtree—cloud_6028688.png" alt="" width="99px" height="50px" class="com
+                         ">
+                         <p>WOLKEN</p>
+                         <div class="style">
+                            <p data-cloud class="style"></p><p id="d">%</p>
+                         </div>
+                        
+                  </div>
+
+            </div>
+
+           </div>
+
+        </div>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
