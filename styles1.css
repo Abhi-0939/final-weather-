@@ -216,7 +216,7 @@ input:hover{
 .btn:hover{
     background-color: rgb(76, 198, 94);
     transition: 0.2s all linear;
-    /* scale: 1.02; */
+   scale: .99;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .name{
